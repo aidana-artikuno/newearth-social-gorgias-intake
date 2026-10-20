@@ -1,0 +1,615 @@
+fo<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>New Earth — Social media in Gorgias (brief + intake)</title>
+<style>
+  :root {
+    --ink: #1c241c;
+    --muted: #5a6358;
+    --line: #d7ddd4;
+    --paper: #f7f5f0;
+    --card: #ffffff;
+    --accent: #2e4a32;
+    --accent-soft: #e8efe6;
+    --warn: #8a5a12;
+    --warn-bg: #f8efd8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  header {
+    background: var(--accent);
+    color: #f4f7f2;
+    padding: 36px 28px 28px;
+  }
+  header .kicker { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.8; }
+  header h1 { margin: 8px 0 8px; font-size: 28px; font-weight: 650; letter-spacing: -0.02em; }
+  header p { margin: 0; max-width: 720px; color: #dce6d8; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px 140px; }
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: -18px 0 28px;
+  }
+  nav.toc a {
+    background: var(--card);
+    border: 1px solid var(--line);
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  section { margin: 28px 0; }
+  h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 { font-size: 15px; margin: 18px 0 8px; }
+  p { margin: 0 0 10px; }
+  ul, ol { margin: 0 0 12px 20px; padding: 0; }
+  li { margin: 0 0 6px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    padding: 16px 18px;
+    margin: 12px 0;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 720px) { .grid2 { grid-template-columns: 1fr; } }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 10px 0 14px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--accent-soft); font-weight: 600; }
+  .note {
+    background: var(--warn-bg);
+    border: 1px solid #e6d3a4;
+    color: var(--warn);
+    padding: 12px 14px;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  label.q { display: block; font-weight: 600; margin: 16px 0 6px; }
+  .hint { display: block; font-weight: 400; color: var(--muted); font-size: 13px; margin-top: 2px; }
+  input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%;
+    font: inherit;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+  textarea { min-height: 84px; resize: vertical; }
+  .checks label { display: block; font-weight: 400; margin: 4px 0; }
+  .inline-checks { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+  .actions {
+    position: sticky;
+    bottom: 0;
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    padding: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  button {
+    font: inherit;
+    font-weight: 600;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: #fff;
+    padding: 9px 14px;
+    cursor: pointer;
+  }
+  button.secondary { background: #fff; color: var(--accent); }
+  button:hover { opacity: 0.92; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 24px; }
+  @media print {
+    header { padding: 12px 0; }
+    nav.toc, .actions { display: none; }
+    body { background: #fff; }
+    .card, .note { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">Artikuno Commerce · New Earth Customer Care</div>
+    <h1>Social media in Gorgias</h1>
+    <p>How Facebook and Instagram would land in the helpdesk, how Eliza would work those tickets, and the questions we need answered before we connect anything.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="toc">
+    <a href="#how">How it connects</a>
+    <a href="#tickets">What becomes a ticket</a>
+    <a href="#sop">How we would handle it</a>
+    <a href="#filter">What we can hide or skip</a>
+    <a href="#limits">Limits to know</a>
+    <a href="#form">Questionnaire</a>
+  </nav>
+
+  <section id="how">
+    <h2>1. How social media connects to Gorgias</h2>
+    <p>Gorgias does not “watch the internet.” It connects to a <strong>Facebook Business Page</strong>. Instagram is added only through that same page. Replies sent from Gorgias appear on Facebook or Instagram as if someone typed them in the native app.</p>
+    <div class="card">
+      <h3>What we need from New Earth to connect</h3>
+      <ul>
+        <li>A Facebook Business Page (not a personal profile, not a Facebook Group).</li>
+        <li>A professional Instagram account, in the same Meta Business portfolio, linked to that Page.</li>
+        <li>A New Earth admin who can click <strong>Login with Facebook</strong> in Gorgias and accept all requested permissions. Artikuno cannot complete this without that login.</li>
+      </ul>
+    </div>
+    <p>Once connected, we choose <em>per page</em> which activity creates tickets: Messenger, Instagram DMs, comments, ad comments, mentions, and (Facebook only) page recommendations. We can turn Instagram on and leave Facebook comments off, or the reverse.</p>
+    <p><strong>Not native in Gorgias social inbox:</strong> TikTok organic comments, YouTube, X / Twitter, LinkedIn. TikTok Shop is a separate order-support app, not a replacement for Meta comments and DMs. WhatsApp is a different channel if you want it later.</p>
+  </section>
+
+  <section id="tickets">
+    <h2>2. What shows up in Gorgias</h2>
+    <p>Each inbound interaction we enable becomes a ticket in <code>newearth-prod</code>, next to email and chat. Eliza would work it from the same helpdesk: customer history, Shopify order sidebar, macros, tags, and rules.</p>
+    <table>
+      <thead>
+        <tr><th>Activity</th><th>Ticket?</th><th>What Eliza can do from Gorgias</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Instagram DM / Facebook Messenger</td>
+          <td>Yes, if enabled</td>
+          <td>Reply privately. Same Shopify context as email. Auto-responder available on Messenger.</td>
+        </tr>
+        <tr>
+          <td>Comments on posts, Reels, ads</td>
+          <td>Yes — every <em>top-level</em> comment is its own ticket</td>
+          <td>Public reply, private reply (take it to DM), hide/unhide. Facebook: Like / Unlike only.</td>
+        </tr>
+        <tr>
+          <td>Mentions (@New Earth)</td>
+          <td>Yes, if enabled</td>
+          <td>Like / public reply. Cannot hide a Facebook mention or reply to it privately via Messenger.</td>
+        </tr>
+        <tr>
+          <td>Facebook recommendations / reviews</td>
+          <td>Yes, if enabled</td>
+          <td>Reply in-thread like a comment ticket.</td>
+        </tr>
+        <tr>
+          <td>Likes, reactions, story views, follows</td>
+          <td>No</td>
+          <td>These do not create tickets. Gorgias cannot send Love / Care / Haha / etc.</td>
+        </tr>
+        <tr>
+          <td>Replies to replies (nested comments)</td>
+          <td>Usually no new ticket</td>
+          <td>We can only reply to the top-level comment from Gorgias, not to a reply-to-a-reply.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">
+      Every comment we pull in is a Gorgias ticket. A busy ad or affiliate post can create dozens of tickets in an hour. That is why we will not turn every box on until you tell us volume and what Customer Care should own versus marketing.
+    </div>
+  </section>
+
+  <section id="sop">
+    <h2>3. How it would be handled (draft SOP for Eliza)</h2>
+    <p>This is the operating model we would implement after you complete the questionnaire. We will adjust it to your answers.</p>
+
+    <h3>Inbox and ownership</h3>
+    <ul>
+      <li>Social tickets land in a dedicated <strong>Social</strong> view (Instagram + Facebook), assigned to <strong>Eliza</strong> during New Earth hours (Mon–Fri, 8:00 AM–5:00 PM Pacific), unless you name a different owner.</li>
+      <li>Marketing / community can keep posting natively. Support replies go out from Gorgias so we have a record and can use Shopify + macros.</li>
+      <li>Same customer who emails and DMs is one Gorgias customer profile — no more split conversations.</li>
+    </ul>
+
+    <h3>Direct messages (private)</h3>
+    <ol>
+      <li>Treat like email: identify the customer, check Shopify, use existing macros (login, subscription, shipping, promo policy).</li>
+      <li>Do not invent discount codes. Live offers only from the current Help Center / promo macros.</li>
+      <li>Cancel / stop-charge language still hits the existing high-priority escalate-to-Eliza rule.</li>
+      <li>Medical / “will this treat X?” → existing medical-acknowledgment path; no product claims.</li>
+      <li>Affiliate / commission questions → existing commission macros or Kevin / Ann as you specify below.</li>
+    </ol>
+
+    <h3>Public comments</h3>
+    <ol>
+      <li><strong>Simple praise</strong> (“love this”) — short public thank-you, or hide-from-queue if you tell us praise does not need a human. Liking a Facebook comment without a reply is not a billable interaction.</li>
+      <li><strong>Support question on a post</strong> — short public acknowledgment, then <strong>Reply by DM</strong> to finish (order lookups and account changes do not belong in a public thread).</li>
+      <li><strong>Spam, scams, off-topic, abusive</strong> — hide from Gorgias (hidden on the platform for everyone except the author). Optional rule: auto-hide on keywords you list (crypto, “DM me for a code,” competitor bait, etc.).</li>
+      <li><strong>Angry or public complaint</strong> — do not argue in comments. Hide if it is abusive; otherwise acknowledge once and move to DM. Escalate internally if it is legal, medical harm, or press.</li>
+      <li><strong>Promo / “what’s the code?”</strong> — use the current promo macro; never invent a code. If no live offer, say so and point to newsletter / SMS signup as you do on email.</li>
+    </ol>
+
+    <h3>After hours and Meta’s reply windows</h3>
+    <ul>
+      <li>Outside 8–5 PT weekdays, social waits like email unless you want a Messenger auto-responder (“we’ll reply next business day”).</li>
+      <li>Humans can reply to a Messenger / Instagram DM in Gorgias only if the customer’s last message was <strong>within 7 days</strong>. Miss that window: reply natively on Meta, or wait for the customer to write again.</li>
+    </ul>
+  </section>
+
+  <section id="filter">
+    <h2>4. What we can filter, hide, or leave out</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>We can do this</h3>
+        <ul>
+          <li>Connect only the channels you want (e.g. Instagram DMs only).</li>
+          <li>Leave ad comments or mentions off if volume is noise.</li>
+          <li>Rules that auto-hide comments matching keywords.</li>
+          <li>Rules that auto-tag and close “thanks / love this” with no reply.</li>
+          <li>Hide a comment from the ticket (Eliza or a rule).</li>
+          <li>Take a public comment private via DM.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>We cannot do this in Gorgias</h3>
+        <ul>
+          <li>Ingest “all reactions” as tickets (and we should not).</li>
+          <li>Reply to nested comment threads (reply-to-a-reply).</li>
+          <li>See that Facebook already auto-hid a comment — it still appears as a normal ticket.</li>
+          <li>Connect Facebook Groups.</li>
+          <li>Moderate TikTok / YouTube / X from the same native inbox.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="limits">
+    <h2>5. Why we are asking these questions first</h2>
+    <p>Connecting social without a scope usually means: the inbox fills with ad-comment noise, Eliza is pulled off email, and nobody agrees who owns a public fight on a post. Your answers let us decide <em>whether</em> to connect, <em>which</em> boxes to tick, and how to staff Eliza before go-live.</p>
+    <p>Please complete the form below. Answers stay in this browser until you click <strong>Copy answers</strong> or <strong>Download</strong> and send the file to Artikuno.</p>
+  </section>
+
+  <section id="form">
+    <h2>6. Questionnaire — please fill this out</h2>
+    <p class="hint">Save as you go; this page remembers your answers on this device. When you are done, use <strong>Copy answers</strong>, <strong>Download as text</strong>, or <strong>Email answers</strong> and send them to Aidana at Artikuno. We will not connect Facebook or Instagram until this comes back.</p>
+
+    <form id="intake">
+      <h3>A. Who is filling this in</h3>
+      <label class="q">Your name<input type="text" name="contact_name" /></label>
+      <label class="q">Role / team<input type="text" name="contact_role" placeholder="e.g. Marketing, Customer Care, Sales Ops" /></label>
+      <label class="q">Email<input type="email" name="contact_email" /></label>
+      <label class="q">Who owns social media day to day today?
+        <span class="hint">Name + whether they sit in marketing, an agency, or Customer Care.</span>
+        <textarea name="social_owner"></textarea>
+      </label>
+      <label class="q">What tool do you use today to answer comments and DMs?
+        <span class="hint">Meta Business Suite, native apps, Sprout, Later, something else, or not answered today.</span>
+        <input type="text" name="current_tool" />
+      </label>
+
+      <h3>B. Which accounts to consider</h3>
+      <div class="checks">
+        <label class="q">Channels you want in Gorgias (check all that apply)</label>
+        <label><input type="checkbox" name="ch_ig" /> Instagram (professional)</label>
+        <label><input type="checkbox" name="ch_fb" /> Facebook Page</label>
+        <label><input type="checkbox" name="ch_messenger" /> Facebook Messenger</label>
+        <label><input type="checkbox" name="ch_tiktok" /> TikTok (note: organic comments are not a native Gorgias inbox)</label>
+        <label><input type="checkbox" name="ch_youtube" /> YouTube</label>
+        <label><input type="checkbox" name="ch_x" /> X / Twitter</label>
+        <label><input type="checkbox" name="ch_linkedin" /> LinkedIn</label>
+        <label><input type="checkbox" name="ch_other" /> Other</label>
+      </div>
+      <label class="q">Exact handles / page names and URLs
+        <textarea name="handles" placeholder="e.g. Instagram @… · Facebook facebook.com/…"></textarea>
+      </label>
+      <label class="q">Is Instagram already a professional account, in Meta Business Manager, and linked to the Facebook Page?
+        <select name="meta_ready">
+          <option value="">Select…</option>
+          <option>Yes — all three are done</option>
+          <option>Partially — we need help checking</option>
+          <option>No / not sure</option>
+        </select>
+      </label>
+      <label class="q">Who can log into Meta with admin access to complete the Gorgias “Login with Facebook” step?
+        <input type="text" name="meta_admin" />
+      </label>
+      <label class="q">How many Facebook Pages or Instagram accounts should connect? (number)
+        <input type="number" name="account_count" min="0" />
+      </label>
+      <label class="q">Any affiliate, region, or campaign pages that must stay out of Customer Care?
+        <textarea name="exclude_pages"></textarea>
+      </label>
+
+      <h3>C. Volume (typical week, not a launch week)</h3>
+      <p>Best-effort numbers are fine. Check Meta insights if you have them.</p>
+      <label class="q">Instagram DMs per week<input type="text" name="vol_ig_dm" placeholder="e.g. 10 / 40 / 100+" /></label>
+      <label class="q">Facebook Messenger per week<input type="text" name="vol_fb_dm" /></label>
+      <label class="q">Comments on organic posts per week<input type="text" name="vol_comments" /></label>
+      <label class="q">Comments on ads / boosted posts per week<input type="text" name="vol_ad_comments" /></label>
+      <label class="q">Mentions / tags per week<input type="text" name="vol_mentions" /></label>
+      <label class="q">Facebook recommendations / reviews per week<input type="text" name="vol_reviews" /></label>
+      <label class="q">Does volume spike around launches, Reach newsletters, or promo weekends?
+        <textarea name="vol_spikes"></textarea>
+      </label>
+
+      <h3>D. What Customer Care should handle</h3>
+      <label class="q">For each type, who owns it?</label>
+      <table>
+        <thead><tr><th>Type</th><th>Owner</th></tr></thead>
+        <tbody>
+          <tr><td>DMs / Messenger (order, login, subscription, shipping)</td>
+            <td>
+              <select name="own_dm">
+                <option value="">Select…</option>
+                <option>Customer Care (Eliza) in Gorgias</option>
+                <option>Marketing / social stays in Meta</option>
+                <option>Split — see notes</option>
+                <option>Do not connect</option>
+              </select>
+            </td></tr>
+          <tr><td>Comments that ask a support question</td>
+            <td>
+              <select name="own_support_comments">
+                <option value="">Select…</option>
+                <option>Customer Care (Eliza) in Gorgias</option>
+                <option>Marketing / social stays in Meta</option>
+                <option>Split — see notes</option>
+                <option>Do not connect</option>
+              </select>
+            </td></tr>
+          <tr><td>Praise / emoji-only comments</td>
+            <td>
+              <select name="own_praise">
+                <option value="">Select…</option>
+                <option>Customer Care replies</option>
+                <option>Marketing replies</option>
+                <option>No reply needed — hide from Eliza’s queue</option>
+                <option>Do not pull these into Gorgias</option>
+              </select>
+            </td></tr>
+          <tr><td>Mentions and tags</td>
+            <td>
+              <select name="own_mentions">
+                <option value="">Select…</option>
+                <option>Customer Care</option>
+                <option>Marketing</option>
+                <option>Do not connect mentions</option>
+              </select>
+            </td></tr>
+          <tr><td>Ad comments</td>
+            <td>
+              <select name="own_ads">
+                <option value="">Select…</option>
+                <option>Customer Care</option>
+                <option>Marketing</option>
+                <option>Do not connect ad comments</option>
+              </select>
+            </td></tr>
+        </tbody>
+      </table>
+      <label class="q">If “split,” how should we decide?
+        <textarea name="split_rules" placeholder="e.g. marketing owns brand comments; Eliza owns anything with an order number or login issue"></textarea>
+      </label>
+
+      <h3>E. Filtering, spam, and hiding</h3>
+      <label class="q">Should we auto-hide obvious spam / scam comments?
+        <select name="hide_spam">
+          <option value="">Select…</option>
+          <option>Yes — hide on keyword list, Eliza reviews a Spam view if needed</option>
+          <option>Yes — hide and do not review</option>
+          <option>No — Eliza reviews every comment</option>
+        </select>
+      </label>
+      <label class="q">Keywords or patterns to auto-hide
+        <span class="hint">Examples: crypto, giveaway bots, “text this number,” adult spam, competitor bait.</span>
+        <textarea name="hide_keywords"></textarea>
+      </label>
+      <label class="q">Should we hide comments that only exist to start an argument or pile-on?
+        <select name="hide_hostile">
+          <option value="">Select…</option>
+          <option>Yes, hide and invite to DM if they have a real order issue</option>
+          <option>Leave public; reply once and move to DM</option>
+          <option>Escalate to marketing / Ann before hiding</option>
+        </select>
+      </label>
+      <label class="q">Anything that must never be hidden (e.g. product quality complaints, medical adverse events)?
+        <textarea name="never_hide"></textarea>
+      </label>
+      <label class="q">Should reactions / likes be ignored? (Gorgias already does not ticket these.)
+        <select name="ignore_reactions">
+          <option>Yes — ignore, no action</option>
+          <option>We still want a process for them in Meta (not Gorgias)</option>
+        </select>
+      </label>
+
+      <h3>F. Voice, SLA, and hours</h3>
+      <label class="q">Target first reply on DMs during business hours
+        <select name="sla_dm">
+          <option value="">Select…</option>
+          <option>Same as email (within one business day)</option>
+          <option>Faster than email — same day / a few hours</option>
+          <option>Under 1 hour</option>
+        </select>
+      </label>
+      <label class="q">Target first reply on public comments during business hours
+        <select name="sla_comment">
+          <option value="">Select…</option>
+          <option>Same as email</option>
+          <option>Same day</option>
+          <option>Under 2 hours (public threads move fast)</option>
+          <option>Marketing still owns speed; Eliza only if it is a support ask</option>
+        </select>
+      </label>
+      <label class="q">After-hours (evenings, weekends, US holidays)
+        <select name="after_hours">
+          <option value="">Select…</option>
+          <option>Wait until next business day — same as email</option>
+          <option>Messenger auto-responder: “we’ll reply next business day”</option>
+          <option>Someone in marketing still covers Meta natively after hours</option>
+        </select>
+      </label>
+      <label class="q">Public tone vs email tone
+        <span class="hint">Email today is Warmly / New Earth Customer Care. Social is usually shorter.</span>
+        <textarea name="tone" placeholder="Any words to use or avoid? Affiliate-facing vs consumer-facing?"></textarea>
+      </label>
+      <label class="q">When a comment needs an account lookup, should Eliza always move to DM?
+        <select name="always_dm">
+          <option value="">Select…</option>
+          <option>Yes — never discuss orders or emails in public</option>
+          <option>Public is OK for general product / policy answers</option>
+        </select>
+      </label>
+
+      <h3>G. New Earth-specific risks</h3>
+      <label class="q">How should Eliza handle medical or “will this cure / treat…” comments?
+        <textarea name="medical"></textarea>
+      </label>
+      <label class="q">Affiliate / commission / “am I getting credit?” on social
+        <textarea name="affiliate"></textarea>
+      </label>
+      <label class="q">Who approves a public reply if something is going viral or looks like a PR issue?
+        <input type="text" name="pr_escalation" />
+      </label>
+      <label class="q">Do you run Instagram / Facebook Lives that would flood comments?
+        <textarea name="lives" placeholder="How often, and should Customer Care cover Lives?"></textarea>
+      </label>
+      <label class="q">Anything Customer Care must not say on social (ingredients, certifications, income claims)?
+        <textarea name="forbidden"></textarea>
+      </label>
+
+      <h3>H. Go-live</h3>
+      <label class="q">Preferred start
+        <select name="golive">
+          <option value="">Select…</option>
+          <option>Connect after this questionnaire — DMs first, comments later</option>
+          <option>Connect DMs + support comments together</option>
+          <option>Not ready — we only wanted the explanation</option>
+        </select>
+      </label>
+      <label class="q">Can we import 30 days of Facebook post/comment history as closed tickets? (Instagram history cannot be imported.)
+        <select name="import_history">
+          <option value="">Select…</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="q">Anything else we should know before we touch the integration
+        <textarea name="other"></textarea>
+      </label>
+    </form>
+
+    <div class="actions">
+      <button type="button" id="copy">Copy answers</button>
+      <button type="button" class="secondary" id="download">Download as text</button>
+      <button type="button" class="secondary" id="email">Email answers</button>
+      <button type="button" class="secondary" id="print">Print / PDF</button>
+      <button type="button" class="secondary" id="clear">Clear this browser</button>
+    </div>
+    <p id="status" class="hint"></p>
+  </section>
+
+  <footer>
+    Artikuno · New Earth Gorgias (<span>newearth-prod</span>) · Social intake · October 2026.
+    Send the downloaded answers to Aidana. We will not connect channels until this is returned.
+  </footer>
+</div>
+
+<script>
+(function () {
+  var form = document.getElementById("intake");
+  var KEY = "ne-social-gorgias-intake-v1";
+  var status = document.getElementById("status");
+
+  function setStatus(t) { status.textContent = t; }
+
+  function collect() {
+    var data = {};
+    new FormData(form).forEach(function (v, k) {
+      if (data[k] === undefined) data[k] = v;
+      else if (Array.isArray(data[k])) data[k].push(v);
+      else data[k] = [data[k], v];
+    });
+    form.querySelectorAll('input[type="checkbox"]').forEach(function (el) {
+      if (!el.name) return;
+      if (data[el.name] === undefined) data[el.name] = el.checked ? "yes" : "no";
+    });
+    return data;
+  }
+
+  function asText(data) {
+    var lines = [
+      "New Earth — Social media in Gorgias intake",
+      "Completed: " + new Date().toISOString(),
+      ""
+    ];
+    Object.keys(data).forEach(function (k) {
+      lines.push(k + ": " + data[k]);
+    });
+    return lines.join("\n");
+  }
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(collect())); } catch (e) {}
+  }
+
+  function restore() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (!raw) return;
+      var data = JSON.parse(raw);
+      Object.keys(data).forEach(function (k) {
+        var fields = form.querySelectorAll("[name='" + k + "']");
+        fields.forEach(function (el) {
+          if (el.type === "checkbox") el.checked = data[k] === "yes" || data[k] === true || data[k] === "on";
+          else el.value = data[k];
+        });
+      });
+    } catch (e) {}
+  }
+
+  form.addEventListener("input", save);
+  form.addEventListener("change", save);
+  restore();
+
+  document.getElementById("copy").onclick = function () {
+    var t = asText(collect());
+    navigator.clipboard.writeText(t).then(function () {
+      setStatus("Answers copied. Paste them into an email to Aidana.");
+    }).catch(function () {
+      setStatus("Could not copy automatically — use Download instead.");
+    });
+  };
+
+  document.getElementById("download").onclick = function () {
+    var blob = new Blob([asText(collect())], { type: "text/plain" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "new-earth-social-gorgias-intake.txt";
+    a.click();
+    setStatus("Downloaded new-earth-social-gorgias-intake.txt — please email it to Aidana.");
+  };
+
+  document.getElementById("email").onclick = function () {
+    var t = asText(collect());
+    var mailto = "mailto:aidana@artikunocommerce.com?subject=" +
+      encodeURIComponent("New Earth — Social media in Gorgias intake") +
+      "&body=" + encodeURIComponent(t.slice(0, 1800));
+    window.location.href = mailto;
+    setStatus("Opened an email draft to Aidana. If it looks truncated, use Download and attach the file instead.");
+  };
+
+  document.getElementById("print").onclick = function () { window.print(); };
+
+  document.getElementById("clear").onclick = function () {
+    if (!confirm("Clear saved answers on this device?")) return;
+    localStorage.removeItem(KEY);
+    form.reset();
+    setStatus("Cleared.");
+  };
+})();
+</script>
+</body>
+</html>
